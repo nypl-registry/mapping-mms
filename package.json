@@ -1,0 +1,34 @@
+{
+  "name": "nypl-registry-mapping-mms",
+  "version": "1.0.0",
+  "description": "Map resources from MMS to Archives/TMS/Catalog",
+  "main": "index.js",
+  "scripts": {
+    "test": "standard && mocha test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nypl-registry/mapping-mms.git"
+  },
+  "keywords": [
+    "nypl-registry"
+  ],
+  "author": "matt miller <thisismattmiller@gmail.com> (http://twitter.com/thisismmiller)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/nypl-registry/mapping-mms/issues"
+  },
+  "homepage": "https://github.com/nypl-registry/mapping-mms",
+  "devDependencies": {
+    "mocha": "^2.4.5",
+    "should": "^8.2.2",
+    "standard": "^6.0.8"
+  },
+  "dependencies": {
+    "cli-color": "^1.1.0",
+    "highland": "^2.7.1",
+    "nypl-registry-utils-database": "nypl-registry/utils-database",
+    "nypl-registry-utils-lexicon": "nypl-registry/utils-lexicon",
+    "nypl-registry-utils-normalize": "nypl-registry/utils-normalize"
+  }
+}
