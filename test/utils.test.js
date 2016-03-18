@@ -16,4 +16,13 @@ describe('mapUtils lib/utils.js', function () {
     var r2 = mapUtils.compareCollectionCallNumberMatch(noMatch)
     r2.archivesCollections.length.should.equal(0)
   })
+
+  it('it should compare two collection titles and return false', function () {
+    var r = mapUtils.compareCollectionTitles('Arthur Bell Collection of Recorded Interviews, 1970-1980', 'Arthur Unger collection of recorded interviews [sound recording]')
+    r.should.equal(false)
+  })
+  it('it should compare two collection titles and return true', function () {
+    var r = mapUtils.compareCollectionTitles('American Society of American Magicians Monthly', 'Society of American Magicians records')
+    r.should.equal(true)
+  })
 })

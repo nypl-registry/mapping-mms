@@ -22,4 +22,14 @@ mmsUuid: 'ea489f60-c602-012f-a845-58d385a7bc34'
 ```
 
 ---
-iluiy
+###mmsCollectionsToArchivesCollectionsByTitle
+Finds mms collections that have no identfiers that can be used and does a very hight threshold title match agains archives collections. Sets the same data as above except
+
+```
+matchedArchivesType: 'title',
+```
+---
+###mmsItemCollectionsToArchivesCollections
+Maps MMS items, that are collections (top level items) to Archive collections based on MSS and bNumber. Sets the same data as above.
+
+
