@@ -28,6 +28,20 @@ function MmsMapping () {
    * @param  {function} cb - Nothing returned
    */
   this.mmsContainerToArchivesComponents = require(`${__dirname}/lib/mms_containers_to_archives_components`)
+
+  /**
+   * Maps MMS items to Archive components based on MSS and bNumber if they have not been matched yet
+   *
+   * @param  {function} cb - Nothing returned
+   */
+  this.mmsItemsToArchivesComponents = require(`${__dirname}/lib/mms_items_to_archives_components`)
+
+  /**
+   * Maps MMS items to Archive components based the archives REPO Objects tables data
+   *
+   * @param  {function} cb - Nothing returned
+   */
+  this.mmsItemsToArchivesComponentsByRepo = require(`${__dirname}/lib/mms_items_to_archives_components_by_repo`)
 }
 
 module.exports = exports = new MmsMapping()

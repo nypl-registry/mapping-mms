@@ -32,4 +32,10 @@ matchedArchivesType: 'title',
 ###mmsItemCollectionsToArchivesCollections
 Maps MMS items, that are collections (top level items) to Archive collections based on MSS and bNumber. Sets the same data as above.
 
+---
+###mmsContainerToArchivesComponents
+Maps MMS containers to Archive components based on MSS and bNumber. Sets the same data as above.
+
+---
+
 

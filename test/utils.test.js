@@ -25,4 +25,11 @@ describe('mapUtils lib/utils.js', function () {
     var r = mapUtils.compareCollectionTitles('American Society of American Magicians Monthly', 'Society of American Magicians records')
     r.should.equal(true)
   })
+
+  it('should parse archives_repo_objects row results into mapped obj', function () {
+    var data = ['2190', '2222', 'Component', '044b9be0-0025-0130-de89-58d385a7bc34', 'image', '1', '[{"uuid":"bb4ebb8a-0db7-c85e-e040-e00a18063bc4","image_id":"4009441"}]', 'NULL', '2013-01-09 19:54:27', '2013-01-09 19:54:27', '1']
+    var r = mapUtils.mapRepoCsvToJson(data)
+    r.describable_id.should.equal('2222')
+    r.capture_ids.should.equal('[{"uuid":"bb4ebb8a-0db7-c85e-e040-e00a18063bc4","image_id":"4009441"}]')
+  })
 })

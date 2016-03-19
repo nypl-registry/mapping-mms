@@ -26,6 +26,7 @@
   },
   "dependencies": {
     "cli-color": "^1.1.0",
+    "csv-parse": "^1.0.2",
     "highland": "^2.7.1",
     "nypl-registry-utils-database": "nypl-registry/utils-database",
     "nypl-registry-utils-lexicon": "nypl-registry/utils-lexicon",
