@@ -25,6 +25,7 @@
     "standard": "^6.0.8"
   },
   "dependencies": {
+    "async": "^1.5.2",
     "cli-color": "^1.1.0",
     "csv-parse": "^1.0.2",
     "highland": "^2.7.1",

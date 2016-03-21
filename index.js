@@ -42,6 +42,13 @@ function MmsMapping () {
    * @param  {function} cb - Nothing returned
    */
   this.mmsItemsToArchivesComponentsByRepo = require(`${__dirname}/lib/mms_items_to_archives_components_by_repo`)
+
+  /**
+   * Maps MMS cols/con/items to archvies compoents based on their hierarchy and matching data, a cluster script spawns many processes
+   *
+   * @param  {function} cb - Nothing returned
+   */
+  this.mmsToArchivesByHierarchy = require(`${__dirname}/lib/mms_to_archives_by_hierarchy`)
 }
 
 module.exports = exports = new MmsMapping()
