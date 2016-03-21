@@ -1,4 +1,7 @@
 # mapping-mms
+[![travis](https://travis-ci.org/nypl-registry/mapping-mms.svg)](https://travis-ci.org/nypl-registry/mapping-mms/)
+
+
 Map resources from MMS to Archives/TMS/Catalog
 
 
@@ -104,7 +107,16 @@ Maps at a higher level, matches containers to the parent series.
 
 ---
 
+###mmsItemsToTmsObjects / mmsItemsToTmsObjectsByImage
+Updates MMS Items with the TMS object ID based on TmsObject ID, callnumber, image ID. 
 
 
+```
+matchedTms: true,
+matchedTmsType: 'identifier',
+tmsId: 155453,
+allTmsIds: [155453]
+```
 
+The allTmsIds are for when a lossy call number match is made, to figure out later.
 

@@ -49,6 +49,20 @@ function MmsMapping () {
    * @param  {function} cb - Nothing returned
    */
   this.mmsToArchivesByHierarchy = require(`${__dirname}/lib/mms_to_archives_by_hierarchy`)
+
+  /**
+   * Maps MMS items to TMS object based on tmsObject, tmsId and callNumber if they have not been matched yet
+   *
+   * @param  {function} cb - Nothing returned
+   */
+  this.mmsItemsToTmsObjects = require(`${__dirname}/lib/mms_items_to_tms_objects`)
+
+  /**
+   * Maps MMS items to TMS objects based on shared image name in mms captures and tms objects
+   *
+   * @param  {function} cb - Nothing returned
+   */
+  this.mmsItemsToTmsObjectsByImage = require(`${__dirname}/lib/mms_items_to_tms_objects_by_image`)
 }
 
 module.exports = exports = new MmsMapping()
